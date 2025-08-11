@@ -297,13 +297,18 @@ let geojsonOriginal = {};
 // }
 
 // Nueva forma: cargar todas las capas y mostrar Barrios por defecto
+
 const cargarCapas = [];
 for (const nombre in configVisor.capas) {
   const { archivo } = configVisor.capas[nombre];
   cargarCapas.push(
     fetch(archivo)
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error('No se pudo cargar el archivo: ' + archivo);
+        return res.json();
+      })
       .then(data => geojsonOriginal[nombre] = data)
+      .catch(err => mostrarAlertaFiltro(err.message))
   );
 }
 
