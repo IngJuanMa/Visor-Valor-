@@ -210,10 +210,10 @@ const visores = {
     center: [8.760177017235593, -76.52986694020356],
     zoom: 15,
     capas: {
-      Terreno: { archivo: "data/san_juan/CR_Terreno_Predio.geojson", estilo: { color: 'orange', weight: 0.6, fillOpacity: 0.2 }, minZoom: 18, maxZoom: 22 },
-      Barrios: { archivo: "data/san_juan/CC_Barrio.geojson", estilo: { color: 'green', weight: 0.6, fillOpacity: 0.2 }, minZoom: 16, maxZoom: 17 },
-      Construccion: { archivo: "data/san_juan/CR_Construccion.geojson", estilo: { color: 'blue', weight: 0.6, fillOpacity: 0.2 }, minZoom: 0, maxZoom: 15 },
-      Unidades: { archivo: "data/san_juan/CR_UnidadConstruccion.geojson", estilo: { color: 'purple', weight: 0.6, fillOpacity: 0.2 }, minZoom: 0, maxZoom: 15 }
+      Terreno: { archivo: "public/data/san_juan/CR_Terreno_Predio.geojson", estilo: { color: 'orange', weight: 0.6, fillOpacity: 0.2 }, minZoom: 18, maxZoom: 22 },
+      Barrios: { archivo: "public/data/san_juan/CC_Barrio.geojson", estilo: { color: 'green', weight: 0.6, fillOpacity: 0.2 }, minZoom: 16, maxZoom: 17 },
+      Construccion: { archivo: "public/data/san_juan/CR_Construccion.geojson", estilo: { color: 'blue', weight: 0.6, fillOpacity: 0.2 }, minZoom: 0, maxZoom: 15 },
+      Unidades: { archivo: "public/data/san_juan/CR_UnidadConstruccion.geojson", estilo: { color: 'purple', weight: 0.6, fillOpacity: 0.2 }, minZoom: 0, maxZoom: 15 }
     }
   },
 
