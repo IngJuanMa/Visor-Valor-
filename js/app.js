@@ -308,7 +308,7 @@ for (const nombre in configVisor.capas) {
         return res.json();
       })
       .then(data => geojsonOriginal[nombre] = data)
-      .catch(err => mostrarAlertaFiltro(err.message))
+      .catch(err => console.log(err.message))
   );
 }
 
